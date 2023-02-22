@@ -12,5 +12,3 @@ CREATE TABLE IF NOT EXISTS albums (
     genre TEXT NOT NULL,
     PRIMARY KEY (id)
 );
-use codeup_test_db;
-describe albums;
