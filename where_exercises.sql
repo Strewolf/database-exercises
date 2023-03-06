@@ -11,3 +11,5 @@ select * from employees.employees where last_name like 'E%' or last_name like '%
 select * from employees.employees where last_name like 'E%' and last_name like '%E';
 
 select * from employees.employees where last_name like '%q%' and last_name not like '%qu%';
+
+
