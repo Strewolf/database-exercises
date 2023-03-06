@@ -1,5 +1,5 @@
 use codeup_test_db;
-
+truncate albums;
 INSERT INTO albums (artist, name, release_date, sales, genre)
 VALUES ('Led Zeppelin', 'Led Zeppelin IV', 1971, 30.4, 'Hard rock, heavy metal, folk rock'),
        ('Michael Jackson', 'Bad', 1987, 21.1, 'Pop, rhythm and blues, funk and rock'),
