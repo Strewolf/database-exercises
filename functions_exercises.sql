@@ -12,5 +12,5 @@ select concat(first_name,' ',last_name) as fullname from employees.employees whe
 
 select * from employees.employees where last_name like '%q%' and last_name not like '%qu%';
 
-select  * from employees.employees where  month(birth_date) = 12 and day(birth_date)= 25;
+select  * from employees.employees where year(hire_date) between 1990 and 2000 and month(birth_date) = 12 and day(birth_date)= 25 order by birth_date asc, hire_date desc;
 
