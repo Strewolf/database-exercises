@@ -14,6 +14,6 @@ order by count(*) desc;
 select gender, count(*) as count
 from employees
 where first_name in ('irena','vidya','maya')
-group by gender
-order by count;
+group by gender;
+
 
