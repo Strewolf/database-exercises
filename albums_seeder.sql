@@ -22,3 +22,6 @@ VALUES ('Led Zeppelin', 'Led Zeppelin IV', 1971, 30.4, 'Hard rock, heavy metal, 
        ('The Beatles','Sgt. Pepper''s Lonely Hearts Club Band',1967,18.3,'Rock'),
        ('Michael Jackson','Dangerous',1991,17.0,'New jack swing, R&B and pop'),
        ('The Beatles','Abbey Road',1969,16.9,'Rock');
+
+alter table albums
+add unique (artist, name);
