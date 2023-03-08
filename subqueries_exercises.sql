@@ -1,4 +1,5 @@
-use employees;
+
+# exercise 1
 select first_name, last_name
 from employees
 where hire_date  in (
@@ -6,7 +7,7 @@ where hire_date  in (
     from employees
     where emp_no = 101010
     );
-
+# exercise 2
 select title
 from titles
 where emp_no in (
@@ -14,9 +15,7 @@ where emp_no in (
     from employees
     where first_name = 'Aamod');
 
-select * from dept_manager
-where gender = f;
-
+# exercise 3
 SELECT first_name, last_name
 FROM employees
 WHERE emp_no IN (
