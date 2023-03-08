@@ -106,3 +106,13 @@ FROM employees AS e
          JOIN departments AS d ON de.dept_no = d.dept_no
          JOIN dept_manager AS dm ON d.dept_no = dm.dept_no AND dm.to_date = '9999-01-01'
          JOIN employees AS m ON dm.emp_no = m.emp_no;
+
+SELECT first_name, last_name, birth_date
+FROM employees
+WHERE emp_no IN (
+    SELECT emp_no
+    FROM dept_manager
+)
+LIMIT 10;
+
+
